@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Linq;
+﻿using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,7 +32,7 @@ public class LineScript : MonoBehaviour {
     {
         points.Add(point);
 
-        lineRenderer.positionCount = points.Count;
+        lineRenderer.numPositions = points.Count;
         lineRenderer.SetPosition(points.Count - 1, point);
 
         if (points.Count > 1)
